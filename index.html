@@ -51,7 +51,7 @@
 
     /* ── GRAIN ── */
     body::after { content:''; position:fixed; inset:0; z-index:999; pointer-events:none; opacity:.03;
-      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
       background-size:200px;
     }
 
@@ -117,12 +117,12 @@
     }
     .hero-img-wrap {
       position:relative;
-      width:160px;
+      width:240px;
       flex-shrink:0;
     }
     .hero-img {
-      width:160px;
-      height:160px;
+      width:240px;
+      height:240px;
       object-fit:cover;
       object-position: center top;
       border-radius:50%;
@@ -153,6 +153,16 @@
       animation: pulse 2s infinite;
       flex-shrink:0;
     }
+  @media(max-width:900px){
+    .hero-img-wrap {
+      width: 220px;
+    }
+
+    .hero-img {
+      width: 220px;
+      height: 220px;
+    }
+  }
     .badge-text {
       font-family:var(--ff-m);
       font-size:.58rem;
@@ -178,8 +188,8 @@
     .hero-eyebrow span { display:inline-block; width:28px; height:1px; background:var(--rust); }
 
     h1.hero-name {
-      font-family: var(--ff-h);
-      font-size: clamp(3rem, 5vw, 5.2rem);
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
       font-weight: 900;
       line-height: 1;
       letter-spacing: -.03em;
@@ -816,7 +826,7 @@
 <section class="hero" id="home">
   <div class="hero-content">
     <div class="hero-eyebrow"><span></span> Backend Engineer · GenAI · Indie Builder</div>
-    <h1 class="hero-name">I build things<br><em>that work.</em></h1>
+    <h1 class="hero-name"><br>Shipping code,<em> chasing curiosity.</em></h1>
     <p class="hero-bio">
       Backend engineer moving deliberately into GenAI — with <strong>1.5+ years</strong> shipping production APIs, LLM-powered pipelines, and financial data systems. Exploring <strong>Opportiq</strong>, a platform idea to turn real collaboration into verifiable career proof.
     </p>
@@ -1040,7 +1050,7 @@
 <!-- ── PROJECTS ── -->
 <section id="projects">
   <div class="s-eyebrow r">05 — past work</div>
-  <h2 class="s-title r">Engineering Projects</h2>
+  <h2 class="s-title r">Projects</h2>
 
   <div class="proj-grid r">
     <div class="proj-card r1">
@@ -1130,7 +1140,7 @@
     </div>
 
     <div class="vision-block r">
-      <div class="vision-head">Where I want to be in 2 years</div>
+      <div class="vision-head">Where I want to be in 5 years</div>
       <div class="vision-body">
         <div class="vision-item">
           <span class="vi-num">01</span>
@@ -1239,7 +1249,7 @@
       </a>
       <a href="https://github.com/sravani-pala-433" target="_blank" class="clink">
         <div class="cl-ico">{}</div>
-        <div><p class="cl-lbl">GitHub</p><p class="cl-val">github.com/sravanipala</p></div>
+        <div><p class="cl-lbl">GitHub</p><p class="cl-val">github.com/sravani-pala-433</p></div>
       </a>
     </div>
   </div>
