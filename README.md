@@ -1,44 +1,38 @@
-# Sravani Pala — Portfolio Website (Build using Claude)
+# Sravani Pala — Portfolio
 
-Personal portfolio site built with plain HTML, CSS, and vanilla JavaScript. No frameworks, no build tools — just one file.
+A responsive React + Vite portfolio with an editorial, light-first visual direction.
 
----
+## Run locally
 
-## About this repo
+1. Install Node.js (18+ recommended).
+2. Extract this folder.
+3. Open a terminal in this folder and run:
 
-This is a **work-in-progress** version of my portfolio. Content and sections will be updated as I progress with Opportiq, deepen my ML foundations, and take on new projects.
+```bash
+npm install
+npm run dev
+```
 
----
+4. Open the local URL printed by Vite (usually http://localhost:5173).
 
-## Customising the content
+## Production build
 
-Everything lives in `index.html`. Open it in VS Code and search for what you need:
+```bash
+npm run build
+npm run preview
+```
 
-| What | Search for |
-|------|-----------|
-| LinkedIn URL | `linkedin.com/in/sravanipala` |
-| GitHub URL | `github.com/sravanipala` |
-| Email / phone | `sravanipala433@gmail.com` |
-| Opportiq status | `opp-status` |
-| About me text | `STORY` |
+## Personalize before publishing
 
----
+- Replace LinkedIn and GitHub placeholders if you want social links added (none were present as actual URLs in the supplied resume).
+- Update location and contact details if they change.
+- Replace `public/sravani-pala-resume.pdf` with your latest resume whenever you update it.
+- Project visuals are conceptual system-flow diagrams, not screenshots of live products.
+- No project URLs or business outcome metrics have been invented.
 
-## Roadmap
+## Stack
 
-- [ ] Add real LinkedIn and GitHub links
-- [ ] Opportiq section updated once implementation begins
-- [ ] Add a writing / blog section
-- [ ] Connect custom domain
-
----
-
-## Built with
-
-- HTML, CSS, Vanilla JS — no frameworks, no build step
-- Google Fonts — Playfair Display, Outfit, IBM Plex Mono
-- **[Claude](https://claude.ai) by Anthropic** — collaborated on frontend design and layout
-
----
-
-*Last updated: May 2026*
+- React 18
+- Vite
+- Plain CSS
+- Lucide icons
